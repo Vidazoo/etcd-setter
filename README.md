@@ -2,6 +2,8 @@
 sets an etcd key-value with ttl and ensures keeping it while the container is running
 
 required values:
+ETCD_server=etcd server ip\fqdn
+ETCD_port=etcd server port
 ETCD_SETTER_KEY=key to set, make sure to use full path (example: /example/test/blabla)
 ETCD_SETTER_VALUE=key value
 ETCD_SETTER_TTL=number of seconds for ttl, must be devidable by 2
