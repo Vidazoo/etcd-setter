@@ -9,7 +9,7 @@ RUN apk update && apk add curl
 
 # adding the codebase
 RUN mkdir /etcd-setter
-COPY / /etcd-setterr/
+COPY / /etcd-setter/
 RUN chmod +x /etcd-setter/etcd_set_ttl.sh
 
 #changing rundir
