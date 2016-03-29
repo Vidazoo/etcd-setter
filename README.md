@@ -4,7 +4,7 @@ sets an etcd key-value with ttl and ensures keeping it while the container is ru
 required values:
 ETCD_SERVER=etcd server ip\fqdn
 ETCD_PORT=etcd server port
-ETCD_SETTER_KEY=key to set, make sure to use full path (example: /example/test/blabla)
+ETCD_SETTER_KEY=key to set, it will be set into the /autoscale/ path (example: /autoscale/test/blabla will have you inserting "test/blabla" as the key)
 ETCD_SETTER_VALUE=key value
 ETCD_SETTER_TTL=number of seconds for ttl, must be devidable by 2
 
